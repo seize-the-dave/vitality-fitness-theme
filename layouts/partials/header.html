@@ -18,24 +18,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto nav">
+{{ range .Site.Menus.main }}
         <li class="nav-item">
-          <a class="nav-link" href="/about/">About Us</a>
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/gift-vouchers/">Vouchers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/prices/">Prices</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/reviews/">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/faq/">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact/">Contact</a>
-        </li>
+{{ end }}
       </ul>
     </div>
   </nav>
