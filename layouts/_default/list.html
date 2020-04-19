@@ -7,9 +7,6 @@
       {{ partial "header.html" . }}
 
       <main role="main">
-        {{ if not .Params.no_header }}
-        <h1>{{ .Title }}</h1>
-        {{ end }}
         {{ .Content }}
       </main>
 
