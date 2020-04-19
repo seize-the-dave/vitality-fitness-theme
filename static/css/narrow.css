@@ -73,6 +73,7 @@ nav.navbar {
   border-bottom: .05rem solid #e5e5e5;
   background-image: url('/img/background.jpg');
   background-position: center center;
+  background-size: cover;
   color: rgba(255, 255, 255, 1);
 }
 .jumbotron .btn {
